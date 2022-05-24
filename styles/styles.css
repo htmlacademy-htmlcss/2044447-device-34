@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-800.woff2);
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubic";
+  src: url(../fonts/rubik/rubik-400.woff2);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubic";
+  src: url(../fonts/rubik/rubik-700.woff2);
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubic", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
