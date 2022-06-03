@@ -7,16 +7,18 @@
   </head>
   <body>
     <header class="page_header">
-      <h1 class="header_logo">
-        <a href="#" class="header_link">
-          <img
-            src="images/header/logo.svg"
-            alt="Device"
-            width="145"
-            height="36"
-          />
-        </a>
-      </h1>
+      <div class="logo_wrapper">
+        <h1 class="header_logo">
+          <a href="index.html" class="header_link">
+            <img
+              src="images/header/logo.svg"
+              alt="Device"
+              width="145"
+              height="36"
+            />
+          </a>
+        </h1>
+      </div>
       <div class="navigation-user">
         <div class="navigation-user_search">
           <form action="#" method="post" class="navigation-user_form">
@@ -40,7 +42,7 @@
               <span class="card_amount">2</span>
               Корзина</a
             >
-            <div class="card_container visually-hidden">
+            <div class="card_container">
               <ul class="card_list_1">
                 <li class="card_item">
                   <a href="#" class="card_item_link"
@@ -90,42 +92,45 @@
         </ul>
       </div>
       <nav class="navigation">
-        <ul class="navigation_list">
-          <li class="navigation_item navigation_catalog">
-            <a href="catalog.html" class="menu_links">Каталог товаров</a>
+        <div class="navigation_catalog">
+          <a href="catalog.html" class="menu_links_catalog">Каталог товаров</a>
+          <div class="submenu_wrapper" id="submenu">
             <ul class="navigation_submenu submenu_list">
               <li class="submenu_items">
-                <a href="#" class="menu_links">Виртуальная реальность</a>
+                <a href="#" class="submenu_links">Виртуальная реальность</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Моноподы для селфи</a>
+                <a href="#" class="submenu_links">Моноподы для селфи</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Экшн-камеры</a>
+                <a href="#" class="submenu_links">Экшн-камеры</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Фитнес-браслеты</a>
+                <a href="#" class="submenu_links">Фитнес-браслеты</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Умные часы</a>
+                <a href="#" class="submenu_links">Умные часы</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Квадрокоптеры</a>
+                <a href="#" class="submenu_links">Квадрокоптеры</a>
               </li>
             </ul>
-          </li>
-        </ul>
-        <ul class="navigation_list">
-          <li class="navigation_item">
-            <a href="#" class="menu_links">Доставка</a>
-          </li>
-          <li class="navigation_item">
-            <a href="#" class="menu_links">Гарантия</a>
-          </li>
-          <li class="navigation_item">
-            <a href="#" class="menu_links">Контакты</a>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <div class="navigation_list_wrapper">
+          <ul class="navigation_list">
+            <li class="navigation_item">
+              <a href="#" class="menu_links">Доставка</a>
+            </li>
+            <li class="navigation_item">
+              <a href="#" class="menu_links">Гарантия</a>
+            </li>
+            <li class="navigation_item">
+              <a href="#" class="menu_links">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -154,7 +159,9 @@
                   Этот обычный, на первый взгляд, квадрокоптер оснащен <br />
                   мощным лазером, замаскированным под стандартную камеру.
                 </p>
-                <a href="#" class="slider-devices_btn btn">Подробнее</a>
+                <a href="#" class="slider-devices_btn btn">
+                  <span class="btn_text">Подробнее</span>
+                </a>
                 <table class="slider-devices_advantages">
                   <tr>
                     <th>800 м</th>
@@ -167,59 +174,73 @@
                 </table>
               </div>
             </li>
-            <li class="slider-item visually-hidden">
-              <img
-                src="images/slider_devices/slider_bracelet.png"
-                alt="Фитнес-браслет"
-                width="560"
-                height="560"
-              />
-              <h2 class="slider-devices_title">
-                Худеем <br />
-                правильно!
-              </h2>
-              <p class="slider-devices_text">
-                Мотивирующие фитнес-браслеты помогут найти в себе силы <br />
-                не пропускать занятия и соблюдать диету.
-              </p>
-              <a href="#" class="slider-devices_btn btn">Подробнее</a>
-              <table class="slider-devices_advantages">
-                <tr>
-                  <th>48 часов</th>
-                </tr>
-                <tr>
-                  <td>Без подзарядки</td>
-                </tr>
-              </table>
+            <li class="slider_item">
+              <div class="slider_blocks">
+                <img
+                  src="images/slider_devices/slider_bracelet.png"
+                  alt="Фитнес-браслет"
+                  width="560"
+                  height="560"
+                />
+              </div>
+              <div class="wrapper_slider">
+                <h2 class="slider-devices_title">
+                  Худеем <br />
+                  правильно!
+                </h2>
+                <p class="slider-devices_text">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы <br />
+                  не пропускать занятия и соблюдать диету.
+                </p>
+                <a href="#" class="slider-devices_btn btn">
+                  <span class="btn_text">Подробнее</span>
+                </a>
+                <table class="slider-devices_advantages">
+                  <tr>
+                    <th>48 часов</th>
+                  </tr>
+                  <tr>
+                    <td>Без подзарядки</td>
+                  </tr>
+                </table>
+              </div>
             </li>
-            <li class="slider-item visually-hidden">
-              <img
-                src="images/slider_devices/slider_sticks.png"
-                alt="Селфи-палка"
-                width="560"
-                height="560"
-              />
-              <h2 class="slider-devices_title">
-                Делай селфи, <br />
-                как Бен Стиллер!
-              </h2>
-              <p class="slider-devices_text">
-                Самая длинная палка для селфи доступна в нашем магазине. <br />
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-              </p>
-              <a href="#" class="slider-devices_btn btn">Подробнее</a>
-              <table class="slider-devices_advantages">
-                <tr>
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
-                </tr>
-                <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-              </table>
+            <li class="slider_item">
+              <div class="slider_blocks">
+                <img
+                  src="images/slider_devices/slider_sticks.png"
+                  alt="Селфи-палка"
+                  width="560"
+                  height="560"
+                />
+              </div>
+
+              <div class="wrapper_slider">
+                <h2 class="slider-devices_title">
+                  Делай селфи, <br />
+                  как Бен Стиллер!
+                </h2>
+                <p class="slider-devices_text">
+                  Самая длинная палка для селфи доступна в нашем магазине.
+                  <br />
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <a href="#" class="slider-devices_btn btn">
+                  <span class="btn_text">Подробнее</span>
+                </a>
+                <table class="slider-devices_advantages">
+                  <tr>
+                    <th>8,5 м</th>
+                    <th>5 кг</th>
+                    <th>Карбон</th>
+                  </tr>
+                  <tr>
+                    <td>Длина палки</td>
+                    <td>Вес палки</td>
+                    <td>Материал</td>
+                  </tr>
+                </table>
+              </div>
             </li>
           </ul>
         </div>
@@ -279,13 +300,19 @@
         <section class="slider_property">
           <ul class="slider_buttons">
             <li class="slider_buttons_item">
-              <a href="#" class="slider_btn btn">Доставка</a>
+              <a href="#" class="slider_btn btn_modify">
+                <span class="btn_text">Доставка</span>
+              </a>
             </li>
             <li class="slider_buttons_item">
-              <a href="#" class="slider_btn btn">Гарантия</a>
+              <a href="#" class="slider_btn btn_modify">
+                <span class="btn_text">Гарантия</span>
+              </a>
             </li>
             <li class="slider_buttons_item">
-              <a href="#" class="slider_btn btn">Кредит</a>
+              <a href="#" class="slider_btn btn_modify">
+                <span class="btn_text">Кредит</span>
+              </a>
             </li>
           </ul>
           <ul class="slider_property_list">
@@ -321,7 +348,7 @@
       <section class="rare-good">
         <h3 class="rare-good_title">Доставим редкий товар под заказ</h3>
         <a href="#" class="rare-good_info">
-          <span class="visually_hidden">Инфо</span>
+          <span class="visually-hidden">Инфо</span>
         </a>
       </section>
 
@@ -341,7 +368,9 @@
             <li class="about-us_item">СДИК</li>
             <li class="about-us_item">ТоксБерри</li>
           </ul>
-          <a href="#" class="about-us_btn btn">Подробнее о нас</a>
+          <a href="#" class="about-us_btn btn">
+            <span class="btn_text">Подробнее о нас</span>
+          </a>
         </div>
         <div class="contacts">
           <h2 class="contacts_title">Контакты</h2>
@@ -365,7 +394,9 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a href="#" class="contacts_btn btn">Напишите нам</a>
+          <a href="#" class="contacts_btn btn">
+            <span class="btn_text">Напишите нам</span>
+          </a>
         </div>
       </section>
 
@@ -406,13 +437,15 @@
     <footer class="page_footer">
       <div class="wrapper_footer">
         <h2 class="visually-hidden">Контакты</h2>
-        <img
-          class="footer-contacts-logo"
-          src="images/footer/logo.svg"
-          alt="Логотип Интернет-магазина «Девайс»"
-          width="145"
-          height="36"
-        />
+        <a href="index.html" class="footer_logo_link">
+          <img
+            class="footer-contacts-logo"
+            src="images/footer/logo.svg"
+            alt="Логотип Интернет-магазина «Девайс»"
+            width="145"
+            height="36"
+        /></a>
+
         <section class="footer-contacts">
           <address class="footer-contacts-address">
             <p class="about-text">
