@@ -7,16 +7,19 @@
   </head>
   <body>
     <header class="page_header">
-      <h1 class="header_logo">
-        <a href="index.html" class="header_link">
-          <img
-            src="images/header/logo.svg"
-            alt="Device"
-            width="145"
-            height="36"
-          />
-        </a>
-      </h1>
+      <div class="logo_wrapper">
+        <h1 class="header_logo">
+          <a href="index.html" class="header_link">
+            <img
+              src="images/header/logo.svg"
+              alt="Device"
+              width="145"
+              height="36"
+            />
+          </a>
+        </h1>
+      </div>
+
       <div class="navigation-user">
         <div class="navigation-user_search">
           <form action="#" method="post" class="navigation-user_form">
@@ -31,9 +34,7 @@
         <ul class="navigation-user_list">
           <li class="navigation-user_item">
             <div class="wrapper_personal">
-              <a
-                href="#"
-                class="navigation-user_personal menu_links user_accept"
+              <a href="#" class="navigation-user_personal user_accept"
                 >Коля Петухов</a
               >
               <a href="#" class="navigation-user_personal_exit menu_links"
@@ -49,7 +50,7 @@
               <span class="card_amount">2</span>
               Корзина</a
             >
-            <div class="card_container visually-hidden">
+            <div class="card_container">
               <ul class="card_list_1">
                 <li class="card_item">
                   <a href="#" class="card_item_link"
@@ -99,49 +100,52 @@
         </ul>
       </div>
       <nav class="navigation">
-        <ul class="navigation_list">
-          <li class="navigation_item navigation_catalog">
-            <a href="catalog.html" class="menu_links">Каталог товаров</a>
-            <ul class="navigation_submenu submenu_list visually-hidden">
+        <div class="navigation_catalog">
+          <a href="catalog.html" class="menu_links_catalog">Каталог товаров</a>
+          <div class="submenu_wrapper">
+            <ul class="navigation_submenu submenu_list">
               <li class="submenu_items">
-                <a href="#" class="menu_links">Виртуальная реальность</a>
+                <a href="#" class="submenu_links">Виртуальная реальность</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Моноподы для селфи</a>
+                <a href="#" class="submenu_links">Моноподы для селфи</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Экшн-камеры</a>
+                <a href="#" class="submenu_links">Экшн-камеры</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Фитнес-браслеты</a>
+                <a href="#" class="submenu_links">Фитнес-браслеты</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Умные часы</a>
+                <a href="#" class="submenu_links">Умные часы</a>
               </li>
               <li class="submenu_items">
-                <a href="#" class="menu_links">Квадрокоптеры</a>
+                <a href="#" class="submenu_links">Квадрокоптеры</a>
               </li>
             </ul>
-          </li>
-        </ul>
-        <ul class="navigation_list">
-          <li class="navigation_item">
-            <a href="#" class="menu_links">Доставка</a>
-          </li>
-          <li class="navigation_item">
-            <a href="#" class="menu_links">Гарантия</a>
-          </li>
-          <li class="navigation_item">
-            <a href="#" class="menu_links">Контакты</a>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <div class="navigation_list_wrapper">
+          <ul class="navigation_list">
+            <li class="navigation_item">
+              <a href="#" class="menu_links">Доставка</a>
+            </li>
+            <li class="navigation_item">
+              <a href="#" class="menu_links">Гарантия</a>
+            </li>
+            <li class="navigation_item">
+              <a href="#" class="menu_links">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -151,7 +155,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
-        </ul>
+        </ol>
       </header>
       <div class="wrapper_catalog">
         <div class="main_container_catalog">
@@ -245,7 +249,7 @@
                 </ul>
               </fieldset>
               <button class="btn catalog-filter-title" type="submit">
-                Показать
+                <span class="btn_text">Показать</span>
               </button>
             </form>
           </section>
@@ -276,10 +280,15 @@
                       height="380"
                       width="360"
                     />
-                    <h3 class="product-card-title">Любительская селфи-палка</h3>
-                    <p class="product-card-price">500 ₽</p>
-                    <button class="btn visually-hidden" type="submit">
-                      Подробнее
+                    <div class="catalog_text_wrapper">
+                      <h3 class="product-card-title">
+                        Любительская селфи-палка
+                      </h3>
+                      <p class="product-card-price">500 ₽</p>
+                    </div>
+
+                    <button class="btn btn_catalog" type="submit">
+                      <span class="btn_text">Подробнее</span>
                     </button>
                   </a>
                 </li>
@@ -292,12 +301,15 @@
                       height="380"
                       width="360"
                     />
-                    <h3 class="product-card-title">
-                      Профессиональная селфи-палка
-                    </h3>
-                    <p class="product-card-price">1500 ₽</p>
-                    <button class="btn visually-hidden" type="submit">
-                      Подробнее
+                    <div class="catalog_text_wrapper">
+                      <h3 class="product-card-title">
+                        Профессиональная селфи-палка
+                      </h3>
+                      <p class="product-card-price">1500 ₽</p>
+                    </div>
+
+                    <button class="btn btn_catalog" type="submit">
+                      <span class="btn_text">Подробнее</span>
                     </button>
                   </a>
                 </li>
@@ -310,12 +322,15 @@
                       height="380"
                       width="360"
                     />
-                    <h3 class="product-card-title">
-                      Непотопляемая селфи-палка
-                    </h3>
-                    <p class="product-card-price">2500 ₽</p>
-                    <button class="btn visually-hidden" type="submit">
-                      Подробнее
+                    <div class="catalog_text_wrapper">
+                      <h3 class="product-card-title">
+                        Непотопляемая селфи-палка
+                      </h3>
+                      <p class="product-card-price">2500 ₽</p>
+                    </div>
+
+                    <button class="btn btn_catalog" type="submit">
+                      <span class="btn_text">Подробнее</span>
                     </button>
                   </a>
                 </li>
@@ -328,12 +343,15 @@
                       height="380"
                       width="360"
                     />
-                    <h3 class="product-card-title">
-                      Селфи-палка «Следуй за мной»
-                    </h3>
-                    <p class="product-card-price">1500 ₽</p>
-                    <button class="btn visually-hidden" type="submit">
-                      Подробнее
+                    <div class="catalog_text_wrapper">
+                      <h3 class="product-card-title">
+                        Селфи-палка «Следуй за мной»
+                      </h3>
+                      <p class="product-card-price">1500 ₽</p>
+                    </div>
+
+                    <button class="btn btn_catalog" type="submit">
+                      <span class="btn_text">Подробнее</span>
                     </button>
                   </a>
                 </li>
