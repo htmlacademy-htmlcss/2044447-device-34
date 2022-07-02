@@ -2781,6 +2781,16 @@ body {
   background-color: #ffcc33;
 }
 
+/* delete arrow in firefox and safari */
+.auth-form-field::-webkit-outer-spin-button,
+.auth-form-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.auth-form-field {
+  -moz-appearance: textfield;
+}
+
 .auth-form-field {
   position: relative;
   height: 60px;
@@ -2885,6 +2895,7 @@ body {
 }
 
 .btn-modal {
+  margin:0;
   padding: 20px 22px;
   background-color: #f0f0f0;
   border: none;
@@ -2940,8 +2951,8 @@ body {
 
 .tooltip-icon {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 26px;
+  height: 26px;
   color: #ffc700;
 }
 
