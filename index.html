@@ -38,10 +38,10 @@
                             <span class="navigation-user_text">Сравнить</span></a>
                     </li>
                     <li class="navigation-user_item cart-container">
-                        <a href="" class="navigation-user_card">
+                        <a href="#" class="navigation-user_card">
                             <span class="card_amount">2</span>
                             <span class="navigation-user_text">Корзина</span></a>
-                        <div class="card_container">
+                        <div class="card_container card_container_close">
                             <ul class="card_list">
                                 <li class="card_item">
                                     <a href="#" class="card_item_link"><img src="images/header/product_small_first.jpeg"
@@ -81,7 +81,7 @@
                 </ul>
             </div>
             <nav class="navigation">
-                <div class="navigation_catalog navigation-catalog-open">
+                <div class="navigation_catalog">
                     <a href="#" class="menu_links_catalog">Каталог товаров</a>
                     <div class="submenu_wrapper">
                         <div class="submenu_catalog">
@@ -98,7 +98,7 @@
                             </ul>
                             <ul class="navigation_submenu">
                                 <li class="submenu_items">
-                                    <a href="#" class="submenu_links active_catalog">Фитнес-браслеты</a>
+                                    <a href="#" class="submenu_links">Фитнес-браслеты</a>
                                 </li>
                                 <li class="submenu_items">
                                     <a href="#" class="submenu_links">Умные часы</a>
@@ -134,13 +134,14 @@
             <section class="slider-devices_container">
                 <div class="slider_container">
                     <ul class="slider_list">
-                        <li class="slider_item">
+                        <li class="slider_item active-screen">
                             <div class="slider_blocks">
                                 <img class="slider_img" src="images/slider_devices/slider_drone.png" alt="Дрон"
                                     width="560" height="560" />
                             </div>
 
                             <div class="wrapper_slider">
+                                <span class="slider_number">01</span>
                                 <h2 class="slider-devices_title">
                                     Порхает как бабочка, <br />
                                     жалит как пчела!
@@ -170,6 +171,7 @@
                                     height="560" />
                             </div>
                             <div class="wrapper_slider">
+                                <span class="slider_number">02</span>
                                 <h2 class="slider-devices_title">
                                     Худеем <br />
                                     правильно!
@@ -178,7 +180,7 @@
                                     Мотивирующие фитнес-браслеты помогут найти в себе силы <br />
                                     не пропускать занятия и соблюдать диету.
                                 </p>
-                                <a href="#" class="slider-devices_btn btn">
+                                <a href="#" class="slider-devices_btn btn" tabindex="-1">
                                     <span class="btn_text">Подробнее</span>
                                 </a>
                                 <table class="slider-devices_advantages">
@@ -198,6 +200,7 @@
                             </div>
 
                             <div class="wrapper_slider">
+                                <span class="slider_number">03</span>
                                 <h2 class="slider-devices_title">
                                     Делай селфи, <br />
                                     как Бен Стиллер!
@@ -207,7 +210,7 @@
                                     <br />
                                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                                 </p>
-                                <a href="#" class="slider-devices_btn btn">
+                                <a href="#" class="slider-devices_btn btn" tabindex="-1">
                                     <span class="btn_text">Подробнее</span>
                                 </a>
                                 <table class="slider-devices_advantages">
@@ -235,17 +238,18 @@
                 </button>
                 <ol class="slider-pagination">
                     <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button"
+                            data-screen="0">
                             <span class="visually-hidden">1 слайд</span>
                         </button>
                     </li>
                     <li class="slider-pagination-item">
-                        <button class="slider-pagination-button" type="button">
+                        <button class="slider-pagination-button" type="button" data-screen="1">
                             <span class="visually-hidden">2 слайд</span>
                         </button>
                     </li>
                     <li class="slider-pagination-item">
-                        <button class="slider-pagination-button" type="button">
+                        <button class="slider-pagination-button" type="button" data-screen="2">
                             <span class="visually-hidden">3 слайд</span>
                         </button>
                     </li>
@@ -259,7 +263,7 @@
                         <a href="#" class="product_title">Виртуальная реальность</a>
                     </li>
                     <li class="product_items">
-                        <a href="catalog.html" class="product_title">Моноподы <br />
+                        <a href="./catalog.html" class="product_title">Моноподы <br />
                             для селфи</a>
                     </li>
                     <li class="product_items">
@@ -281,23 +285,23 @@
                 <section class="slider_property">
                     <ul class="slider_buttons">
                         <li class="slider_buttons_item">
-                            <a href="#" class="slider_btn btn_modify btn_current">
+                            <a href="#" class="slider_btn btn_modify btn_current" data-property="0">
                                 <span class="btn_text">Доставка</span>
                             </a>
                         </li>
                         <li class="slider_buttons_item">
-                            <a href="#" class="slider_btn btn_modify">
+                            <a href="#" class="slider_btn btn_modify " data-property="1">
                                 <span class="btn_text">Гарантия</span>
                             </a>
                         </li>
                         <li class="slider_buttons_item">
-                            <a href="#" class="slider_btn btn_modify">
+                            <a href="#" class="slider_btn btn_modify " data-property="2">
                                 <span class="btn_text">Кредит</span>
                             </a>
                         </li>
                     </ul>
                     <ul class="slider_property_list">
-                        <li class="slider_block">
+                        <li class="slider_block current_slider" data-slider="0">
                             <h2 class="slider_title">Доставка</h2>
                             <p class="slider_text">
                                 Мы с удовольствием доставим ваш товар прямо <br />
@@ -306,7 +310,7 @@
                             </p>
                         </li>
 
-                        <li class="slider_block">
+                        <li class="slider_block" data-slider="1">
                             <h2 class="slider_title">Гарантия</h2>
                             <p class="slider_text">
                                 Если из-за возгорания купленного у нас товара у вас сгорит дом —
@@ -314,7 +318,7 @@
                             </p>
                         </li>
 
-                        <li class="slider_block">
+                        <li class="slider_block" data-slider="2">
                             <h2 class="slider_title">Кредит</h2>
                             <p class="slider_text">
                                 Залезть в долговую яму стало проще! Кредитные консультанты
@@ -328,7 +332,7 @@
 
             <section class="rare-good">
                 <a href="" class="rare-good_link">
-                    <h3 class="rare-good_title">Доставим редкий товар под заказ</h3>
+                    <h3 class="rare-good_title button-open">Доставим редкий товар под заказ</h3>
                 </a>
             </section>
 
@@ -480,7 +484,7 @@
                 </section>
             </div>
         </footer>
-        <div class="modal-container modal-container-close">
+        <div class="modal-container">
             <div class="modal modal-auth">
                 <button class="modal-close-button">
                     <span class="visually-hidden">Закрыть</span>
@@ -501,6 +505,7 @@
                                 <input required class="auth-form-field field-email" type="email" id="auth-email"
                                     name="auth-email" placeholder="Ваша почта" />
                             </div>
+                            <span class="visually-hidden auth-form-warning-text">Забавный у вас адрес</span>
                             <span class="visually-hidden auth-form-error-text">Забавный у вас адрес</span>
                         </div>
 
@@ -531,7 +536,7 @@
                                     <span class="button-minus"></span>
                                     <span class="visually-hidden">Убавить</span>
                                 </button>
-                                <input class="auth-form-field field-amount" type="number" min="1" value="1" readonly
+                                <input class="auth-form-field field-amount " type="number" min="1" value="1" readonly
                                     id="auth-amount" name="auth-amount" placeholder="1" />
                                 <button type="button" class="btn-modal">
                                     <span class="button-add"></span>
@@ -547,6 +552,7 @@
                 </section>
             </div>
         </div>
+        <script src="./js/script.js"></script>
     </body>
 
 </html>

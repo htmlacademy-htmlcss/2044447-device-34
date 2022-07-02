@@ -30,23 +30,26 @@
                 </div>
                 <ul class="navigation-user_list">
                     <li class="navigation-user_item">
-                        <a href="#" class="navigation-user_personal">
-                            <span class="navigation-user_text">Войти</span>
-                        </a>
+                        <div class="wrapper_personal">
+                            <a href="#" class="navigation-user_personal_user user_accept"><span
+                                    class="navigation-user_text">Коля Петухов</span></a>
+                            <a href="#" class="navigation-user_personal_exit menu_links"><span
+                                    class="navigation-user_text">Выйти</span></a>
+                        </div>
                     </li>
                     <li class="navigation-user_item">
                         <a href="#" class="navigation-user_compare">
                             <span class="navigation-user_text">Сравнить</span></a>
                     </li>
                     <li class="navigation-user_item cart-container">
-                        <a href="" class="navigation-user_card">
+                        <a href="#" class="navigation-user_card">
                             <span class="card_amount">2</span>
                             <span class="navigation-user_text">Корзина</span></a>
-                        <div class="card_container">
+                        <div class="card_container card_container_close">
                             <ul class="card_list">
                                 <li class="card_item">
                                     <a href="#" class="card_item_link"><img src="images/header/product_small_first.jpeg"
-                                            alt="Товар" width="39" height="43" class="card_item_image" />
+                                            alt="Товар" width="39" height="43" />
                                         <p class="card_item_title">Любительская селфи-палка</p>
                                     </a>
                                 </li>
@@ -61,7 +64,7 @@
                                 <li class="card_item">
                                     <a href="#" class="card_item_link">
                                         <img src="images/header/product_small_second.jpeg" alt="Товар" width="39"
-                                            height="43" class="card_item_image" />
+                                            height="43" />
                                         <p class="card_item_title">Профессиональная селфи-палка</p>
                                     </a>
                                 </li>
@@ -82,11 +85,11 @@
                 </ul>
             </div>
             <nav class="navigation">
-                <div class="navigation_catalog navigation-catalog-open">
-                    <a href="#" class="menu_links_catalog active_catalog">Каталог товаров</a>
+                <div class="navigation_catalog">
+                    <a href="#" class="menu_links_catalog menu_links">Каталог товаров</a>
                     <div class="submenu_wrapper">
                         <div class="submenu_catalog">
-                            <ul class="navigation_submenu submenu_list">
+                            <ul class="navigation_submenu">
                                 <li class="submenu_items">
                                     <a href="#" class="submenu_links">Виртуальная реальность</a>
                                 </li>
@@ -97,15 +100,15 @@
                                     <a href="#" class="submenu_links">Экшн-камеры</a>
                                 </li>
                             </ul>
-                            <ul class="navigation_submenu submenu_list">
+                            <ul class="navigation_submenu">
                                 <li class="submenu_items">
-                                    <a href="#" class="submenu_links active_catalog">Фитнес-браслеты</a>
+                                    <a href="#" class="submenu_links ">Фитнес-браслеты</a>
                                 </li>
                                 <li class="submenu_items">
                                     <a href="#" class="submenu_links">Умные часы</a>
                                 </li>
                             </ul>
-                            <ul class="navigation_submenu submenu_list">
+                            <ul class="navigation_submenu">
                                 <li class="submenu_items">
                                     <a href="#" class="submenu_links">Квадрокоптеры</a>
                                 </li>
@@ -117,7 +120,7 @@
                 <div class="navigation_list_wrapper">
                     <ul class="navigation_list">
                         <li class="navigation_item">
-                            <a href="#" class="menu_links">Доставка</a>
+                            <a href="#" class="menu_links active_catalog">Доставка</a>
                         </li>
                         <li class="navigation_item">
                             <a href="#" class="menu_links">Гарантия</a>
@@ -288,10 +291,7 @@
                                             </h3>
                                             <p class="product-card-price">500 ₽</p>
                                         </div>
-
-                                        <button class="btn btn_catalog" type="submit">
-                                            <span class="btn_text">Подробнее</span>
-                                        </button>
+                                        <span class="product-card_text">Подробнее</span>
                                     </a>
                                 </li>
                                 <li class="product-card">
@@ -313,10 +313,9 @@
                                             </h3>
                                             <p class="product-card-price">1 500 ₽</p>
                                         </div>
+                                        <span class="product-card_text">Подробнее</span>
                                     </a>
-                                    <button class="btn btn_catalog" type="submit">
-                                        <span class="btn_text">Подробнее</span>
-                                    </button>
+
                                 </li>
                                 <li class="product-card">
                                     <a class="product-card-link" href="product.html">
@@ -338,10 +337,7 @@
                                             </h3>
                                             <p class="product-card-price">2 500 ₽</p>
                                         </div>
-
-                                        <button class="btn btn_catalog" type="submit">
-                                            <span class="btn_text">Подробнее</span>
-                                        </button>
+                                        <span class="product-card_text">Подробнее</span>
                                     </a>
                                 </li>
                                 <li class="product-card">
@@ -363,10 +359,7 @@
                                             </h3>
                                             <p class="product-card-price">1 500 ₽</p>
                                         </div>
-
-                                        <button class="btn btn_catalog" type="submit">
-                                            <span class="btn_text">Подробнее</span>
-                                        </button>
+                                        <span class="product-card_text">Подробнее</span>
                                     </a>
                                 </li>
                             </ul>
@@ -487,6 +480,8 @@
                 </section>
             </div>
         </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 
 </html>
