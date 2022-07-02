@@ -2279,8 +2279,6 @@ body {
   border-color: #af4fff;
 }
 
-.control-color {}
-
 .control:hover {
   opacity: 0.6;
 }
