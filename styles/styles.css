@@ -2781,7 +2781,6 @@ body {
   background-color: #ffcc33;
 }
 
-/* ----arrow in moz and safari */
 .auth-form-field::-webkit-outer-spin-button,
 .auth-form-field::-webkit-inner-spin-button {
     -webkit-appearance: none;
