@@ -22,6 +22,7 @@ const popup = document.querySelector('.modal-container');
 const openPopupButton = document.querySelector('.button-open');
 const closePopupButton = document.querySelector('.modal-close-button');
 const error = document.querySelector('.field-email');
+// let pattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
 
@@ -145,6 +146,7 @@ field.addEventListener("keyup", function(){
     else {
         field.classList.add('field-error');
     }
+    console.log(field.value);
 });
 //  Modal-window
 
@@ -166,9 +168,13 @@ document.addEventListener('keydown', function (evt) {
 error.addEventListener("keyup", function(){
     if (error.value.match(pattern)) {
         document.querySelector('.auth-form-warning-text').classList.remove('visually-hidden');
+        document.querySelector('.auth-form-error-text').classList.add('visually-hidden');
+        error.classList.remove('auth-form-error');
     }
     else {
         document.querySelector('.auth-form-error-text').classList.remove('visually-hidden');
         error.classList.add('auth-form-error');
+        document.querySelector('.auth-form-warning-text').classList.add('visually-hidden');
     }
+    console.log(error.value);
 })
